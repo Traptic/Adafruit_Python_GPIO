@@ -46,8 +46,9 @@ _REPEAT_DELAY = 4
 def _check_running_as_root():
     # NOTE: Checking for root with user ID 0 isn't very portable, perhaps
     # there's a better alternative?
-    if os.geteuid() != 0:
-        raise RuntimeError('Expected to be run by root user! Try running with sudo.')
+#    if os.geteuid() != 0:
+#        raise RuntimeError('Expected to be run by root user! Try running with sudo.')
+    pass
 
 def disable_FTDI_driver():
     """Disable the FTDI drivers for the current platform.  This is necessary
